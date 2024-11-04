@@ -13,7 +13,7 @@ func main() {
 	input, _ := reader.ReadString('\n')
 	input = strings.TrimSpace(input)
 
-	// Pisahkan kata-kata berdasarkan spasi
+	// Memisahkan kata2nya
 	words := strings.Fields(input)
 
 	if len(words) < 3 {
@@ -21,7 +21,7 @@ func main() {
 		return
 	}
 
-	// Balikkan setiap kata tanpa mengubah urutan kata
+	// Reversing wordnya
 	for i := 0; i < len(words); i++ {
 		// Pisahkan suku kata berdasarkan karakter
 		runes := []rune(words[i])
